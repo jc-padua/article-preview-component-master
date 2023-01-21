@@ -148,6 +148,8 @@ img {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .share-img__desktop {
@@ -223,6 +225,8 @@ img {
         width: 2rem;
         height: 2rem;
         cursor: pointer;
+        outline: none;
+        border: none;
         border-radius: 50%;
     }
 
