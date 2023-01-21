@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    margin: 2rem;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.card-img {
+    background-image: url(images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 14rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-heading,
+.card-subheading {
+    margin: 2.5rem;
+}
+
+.card-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-subheading {
+    font-size: 1rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 2rem;
+}
+
+/* Card Share Section */
+
+.card-share,
+.card-share__active,
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-share {
+    border-radius: 0 0 15px 15px;
+    padding: 1.5rem 2.5rem;
+}
+
+.avatar-img,
+.share-img,
+.share-img__active {
+    border-radius: 100%;
+}
+
+.avatar-img {
+    width: 3rem;
+}
+
+.avatar-details :first-child {
+    font-weight: 700;
+}
+
+.avatar-details :not(:first-child) {
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.share-img {
+    background-image: url(images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsla(217, 19%, 35%, .2);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* Active Card Share Section */
+
+.card-share__active {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 0 0 15px 15px;
+    padding: 2.2rem 2.5rem;
+    /*  Customized Top Bottom Padding for Equal Size When Changing to Active State */
+}
+
+.socmed {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socmed-icon {
+    width: 1.5rem;
+}
+
+.card-share__active .share-img {
+    background-image: url(images/icon-share-active.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsla(217, 19%, 35%, .2);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* Card Footer Switch */
+
+.card-footer {
+    display: none;
+}
+
+.card-footer.active {
+    display: block;
+}
+
+/* Transition */
+@keyframes circle-in-center {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(125%);
+    }
+}
+
+[transition-style="in:circle:center"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}
+
+/* For Desktop Version */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
