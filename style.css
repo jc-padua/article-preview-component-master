@@ -118,6 +118,8 @@ img {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 /* Active Card Share Section */
@@ -142,14 +144,8 @@ img {
 
 .card-share__active .share-img {
     background-image: url(images/icon-share-active.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: hsla(217, 19%, 35%, .2);
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    outline: none;
-    border: none;
+    background-color: var(--Grayish-Blue);
+
 }
 
 .share-img__desktop {
@@ -187,7 +183,7 @@ img {
 
 /* For Desktop Version */
 
-@media (min-width:475px) {
+@media (min-width:875px) {
     .card {
         display: flex;
         max-height: 100%;
@@ -225,9 +221,9 @@ img {
         width: 2rem;
         height: 2rem;
         cursor: pointer;
-        outline: none;
-        border: none;
         border-radius: 50%;
+        border: none;
+        outline: none;
     }
 
     .popup {
